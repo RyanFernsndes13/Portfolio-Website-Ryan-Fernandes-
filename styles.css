@@ -1,0 +1,165 @@
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f9fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center; /* ✅ All text centered by default */
+}
+
+/* ========== HEADER & NAVBAR ========== */
+header {
+    background-color: #004aad;
+    padding: 15px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center; /* ✅ Ensures text inside main stays centered */
+}
+
+h1, h2, h3 {
+    color: #004aad;
+}
+
+/* ========== PROJECTS SECTION ========== */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    width: 300px;
+    background-color: #f1f4f9;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ========== CONTACT FORM ========== */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left; /* ✅ Keep form fields aligned left */
+    max-width: 500px;
+    margin: 0 auto; /* Center the whole form box */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #003580;
+}
+
+/* ========== CONTACT INFO ========== */
+.contact-info {
+    text-align: left; /* ✅ Keep info easy to read */
+    display: inline-block; /* ✅ Centers the block while keeping text left */
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 8px 0;
+}
+
+.contact-info a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004aad;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin: 20px;
+    }
+}
