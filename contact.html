@@ -21,18 +21,18 @@
         <p>I'd love to hear from you! Fill out the form below or reach out by email.</p>
 
         <section class="contact-section">
-            <form id="contact-form" action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea><br><br>
+            <form id="contactForm">
+                
+                <input type="text" id="name" name="from_name" placeholder="Enter your name" required><br>
+        
+                <input type="email" id="email" name="from_email" placeholder="Enter your email" required><br>
+          
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
                 <button type="submit"> Send Message </button>
+        
             </form>
+            <p id="statusMsg"></p>
         </section>
 
         <section class="contact-info">
@@ -47,8 +47,8 @@
     <footer>
         <p>&copy; 2025 Ryan Fernandes</p>
     </footer>
-    <!-- EmailJS SDK (CDN) - required for email sending. Replace IDs in main.js. -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
