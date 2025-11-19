@@ -21,7 +21,7 @@
         <p>I'd love to hear from you! Fill out the form below or reach out by email.</p>
 
         <section class="contact-section">
-            <form action="#" method="post">
+            <form id="contact-form" action="#" method="post">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
 
@@ -39,6 +39,7 @@
             <h3>Other ways to reach me</h3>
             <ul>
                 <li>Email: <a href="mailto:rferns1313@gmail.com">rferns1313@gmail.com</a></li>
+                <li>Phone: +265 (0)991877335 </li>
             </ul>
         </section>
     </main>
@@ -46,5 +47,8 @@
     <footer>
         <p>&copy; 2025 Ryan Fernandes</p>
     </footer>
+    <!-- EmailJS SDK (CDN) - required for email sending. Replace IDs in main.js. -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
